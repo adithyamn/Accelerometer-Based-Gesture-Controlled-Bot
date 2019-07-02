@@ -1,4 +1,4 @@
- const int xpin=A0;
+const int xpin=A0;
 const int ypin=A1;
 int a,b;
 
@@ -16,29 +16,24 @@ void loop() {
  int y=analogRead(ypin);
 
  if (((x<=(465))&&(x>=(365))) && ((y<=(450)) && (y>=(350))))
-
 {
-  Serial.print('s');
+  Serial.print('s'); //Stop
 }
  if ((y<=(515)) && (y>=415))
-
 {
-  Serial.print('f');
+  Serial.print('f'); //Forward
 }
  if ((y<=(400)) && (y>=300))
-
 {
-  Serial.print('o');
+  Serial.print('o'); //Reverse
 }
  if ((x<=(515)) && (x>=415))
-
 {
-  Serial.print('r');
+  Serial.print('r'); //Right
 }
  if ((x<=(400)) && (x>=300))
-
 {
-  Serial.print('l');
+  Serial.print('l'); //Left
 }
 }
  
